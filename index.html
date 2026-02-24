@@ -66,20 +66,27 @@
       background: #f0fdf4;
       border: 1.5px solid #bbf7d0;
       border-radius: 12px;
-      padding: 20px 24px;
+      padding: 22px 26px;
       margin-bottom: 36px;
+    }
+
+    .summary-box .summary-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #16a34a;
+      margin-bottom: 10px;
     }
 
     .summary-box p {
       color: #166534;
-      font-size: 14px;
-      font-weight: 500;
-      margin: 0;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 10px;
     }
 
-    .summary-box strong {
-      font-weight: 700;
-    }
+    .summary-box p:last-child { margin-bottom: 0; }
 
     h2 {
       font-size: 17px;
@@ -187,12 +194,6 @@
 
     a:hover { text-decoration: underline; }
 
-    .section-divider {
-      border: none;
-      border-top: 1px solid #e8f0fe;
-      margin: 8px 0;
-    }
-
     .footer {
       margin-top: 48px;
       padding-top: 24px;
@@ -218,98 +219,97 @@
       <div class="logo">WordHaven</div>
       <div class="tagline">Word Puzzle Game · iOS</div>
       <h1>Privacy Policy</h1>
-      <p class="effective">Effective date: February 23, 2026 &nbsp;·&nbsp; Version 1.0</p>
+      <p class="effective">Effective date: February 23, 2026 &nbsp;·&nbsp; Version 1.0 &nbsp;·&nbsp; Developer located in Ontario, Canada</p>
     </div>
 
     <div class="summary-box">
-      <p><strong>Plain-language summary:</strong> WordHaven does not collect, transmit, or sell any personal information. Your game progress lives only on your device. The only third-party service we use is Google AdMob to show rewarded ads — AdMob may collect limited device data for ad delivery, and you will be asked for your permission before any personalised tracking occurs.</p>
+      <div class="summary-label">Summary</div>
+      <p>WordHaven is a word puzzle game we built to be calm, focused, and private. We have no interest in your personal data and we don't collect any. Everything about your game — your progress, your coins, your settings — stays entirely on your phone and never leaves it.</p>
+      <p>The one thing worth knowing upfront is that we show optional rewarded ads through Google AdMob. You choose when to watch one (to earn in-game coins). AdMob operates independently of us and may collect some basic device information to deliver those ads. Before any of that happens, you'll see a permission prompt on your first launch and can say no. The game works exactly the same either way.</p>
+      <p>That's really it. No accounts, no tracking, no data being sold. The sections below go into full detail for anyone who wants it.</p>
     </div>
 
     <!-- 1 -->
     <h2>1. About This Policy</h2>
-    <p>This Privacy Policy explains how WordHaven ("we", "our", "the app", or "the developer") handles information in connection with your use of the WordHaven mobile application on iOS. We are an independent developer committed to your privacy. We have written this policy to be as clear and complete as possible.</p>
-    <p>By downloading or using WordHaven you acknowledge you have read this policy. If you do not agree, please uninstall the app.</p>
+    <p>This Privacy Policy describes how WordHaven ("we", "our", "the app", or "the developer") handles information when you use the WordHaven iOS application. We are an independent developer based in Ontario, Canada, and we are committed to protecting your privacy under applicable Canadian law and international privacy standards.</p>
+    <p>By downloading or using WordHaven you acknowledge that you have read this policy. If you do not agree with it, please uninstall the app.</p>
+    <p>This policy applies to the WordHaven iOS app distributed through the Apple App Store. It does not apply to any third-party websites or services linked from within the app, including Google's advertising services.</p>
 
     <!-- 2 -->
-    <h2>2. Information We Collect — None</h2>
-    <p><strong>WordHaven itself collects zero personal information.</strong> Specifically, we do NOT collect, process, transmit, or store:</p>
+    <h2>2. What We Collect (Short Answer: Nothing)</h2>
+    <p><strong>WordHaven itself collects zero personal information.</strong> We do not collect, process, transmit, or store any of the following:</p>
     <ul>
       <li>Your name, email address, username, or any identity information</li>
-      <li>Your phone number, address, or payment information</li>
-      <li>Your precise or approximate location</li>
-      <li>Your contacts, photos, camera, or microphone data</li>
+      <li>Your phone number, mailing address, or payment details</li>
+      <li>Your precise or approximate GPS location</li>
+      <li>Your contacts, photos, camera access, or microphone input</li>
       <li>Your health, financial, or biometric data</li>
       <li>Any behavioural analytics or usage telemetry</li>
-      <li>Crash logs or diagnostics sent to our servers (we have no servers)</li>
+      <li>Crash logs or diagnostics sent to our servers (we operate no servers at all)</li>
     </ul>
-    <p>We do not require an account, login, or registration of any kind. The app is fully functional without any network connectivity.</p>
+    <p>The app does not require an account, login, or registration of any kind. It is fully playable without an internet connection.</p>
 
     <!-- 3 -->
     <h2>3. Data Stored Locally on Your Device</h2>
-    <p>To save your game progress between sessions, the app stores data <strong>exclusively on your device</strong> using your device's local storage. This data never leaves your device and is never transmitted to us or any third party.</p>
+    <p>To save your progress between sessions, the app stores some data <strong>directly on your device</strong> using local storage. This data never leaves your phone and is never sent to us or any third party.</p>
 
     <h3>What is stored and why:</h3>
     <table class="data-table">
       <thead>
         <tr>
-          <th>Storage Key</th>
-          <th>What it contains</th>
+          <th>What is stored</th>
+          <th>Contents</th>
           <th>Purpose</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><code>wordcraft_save_v1</code></td>
-          <td>Coin balance, current level, solved words, puzzle progress, tutorial status</td>
-          <td>Resume your game where you left off</td>
+          <td>Game save</td>
+          <td>Your coin balance, current campaign level, solved words, puzzle progress, and whether you have completed the tutorial</td>
+          <td>So you can pick up where you left off</td>
         </tr>
         <tr>
-          <td><code>wordcraft_discoveries_lifetime_v1</code></td>
-          <td>Lifetime total of words you have found</td>
-          <td>Display your all-time discovery count</td>
+          <td>Lifetime discoveries</td>
+          <td>The total number of words you have found since installing the app</td>
+          <td>Displayed as your all-time discovery count on the home screen</td>
         </tr>
         <tr>
-          <td><code>wordcraft_discoveries_daily_v1</code></td>
-          <td>Words found in the current 24-hour window</td>
-          <td>Show your daily word count on the home screen</td>
+          <td>Daily discoveries</td>
+          <td>Words found in the current 24-hour window, plus a timestamp of your last session</td>
+          <td>Shows your daily word count and resets it after 24 hours of inactivity</td>
         </tr>
         <tr>
-          <td><code>wordcraft_discoveries_daily_ts_v1</code></td>
-          <td>Timestamp of your last discovery session</td>
-          <td>Reset daily counter after 24 hours of inactivity</td>
-        </tr>
-        <tr>
-          <td><code>wordcraft_daily_progress_v2</code></td>
+          <td>Daily puzzle record</td>
           <td>Which daily puzzles you have completed and when</td>
-          <td>Prevent replaying already-completed daily puzzles</td>
+          <td>Prevents replaying a puzzle you have already finished that day</td>
         </tr>
         <tr>
-          <td><code>wordHavenSettings</code></td>
-          <td>Music on/off, sound effects on/off, reduce lighting setting</td>
-          <td>Respect your personal preferences and accessibility needs</td>
+          <td>Settings</td>
+          <td>Music on/off, sound effects on/off, reduce lighting preference</td>
+          <td>Respects your personal preferences and accessibility choices between sessions</td>
         </tr>
       </tbody>
     </table>
 
     <div class="callout">
-      <p><strong>How to delete this data:</strong> Uninstalling WordHaven from your device permanently removes all locally stored game data. You can also clear the app's data via iOS Settings → General → iPhone Storage → WordHaven → Delete App.</p>
+      <p><strong>How to delete your local data:</strong> Uninstalling WordHaven from your device permanently removes all locally stored game data. You can also do this via iOS Settings &gt; General &gt; iPhone Storage &gt; WordHaven &gt; Delete App.</p>
     </div>
 
     <!-- 4 -->
-    <h2>4. Advertising — Google AdMob</h2>
-    <p>WordHaven is free to play and is supported by optional rewarded video advertisements served by <strong>Google AdMob</strong>, a service operated by Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). You choose to watch an ad in exchange for in-game coins — ads are never forced.</p>
+    <h2>4. Advertising and Google AdMob</h2>
+    <p>WordHaven is free to play and is supported by optional rewarded video advertisements served by <strong>Google AdMob</strong>, a service operated by Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Ads are never forced on you — you actively choose to watch one in exchange for in-game coins.</p>
 
     <h3>What AdMob may collect:</h3>
-    <p>Google AdMob, as an independent third party, may collect and process the following types of data to serve and measure ads:</p>
+    <p>Google AdMob is an independent third party and may collect the following data to deliver and measure ads. WordHaven has no access to any of this information:</p>
     <ul>
-      <li><strong>Apple Advertising Identifier (IDFA)</strong> — only with your explicit consent via the ATT prompt (see Section 5)</li>
-      <li><strong>IP address</strong> — used to approximate your country/region for ad targeting</li>
-      <li><strong>Device information</strong> — device model, operating system version, screen resolution, app version</li>
-      <li><strong>Ad interaction data</strong> — whether an ad was shown, viewed to completion, or clicked</li>
-      <li><strong>Approximate location</strong> — derived from your IP address only (not GPS)</li>
+      <li><strong>Apple Advertising Identifier (IDFA)</strong> — collected only if you grant permission via the ATT prompt described in Section 5</li>
+      <li><strong>IP address</strong> — used to approximate your country or region for ad targeting purposes</li>
+      <li><strong>Device information</strong> including device model, iOS version, screen size, and app version</li>
+      <li><strong>Ad interaction data</strong> such as whether an ad was shown, completed, or tapped</li>
+      <li><strong>Approximate location</strong> derived from your IP address only (not from GPS or precise location services)</li>
     </ul>
 
-    <p>This data is collected and controlled by Google, not by WordHaven. We have no access to it. Google may use this data in accordance with its own privacy policies:</p>
+    <p>Google controls this data and handles it under its own privacy policies:</p>
     <ul>
       <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
       <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses data in advertising</a></li>
@@ -317,25 +317,24 @@
     </ul>
 
     <h3>Opting out of personalised ads:</h3>
-    <p>You may opt out of personalised advertising at any time:</p>
     <ul>
-      <li><strong>On iOS 14.5+:</strong> Go to Settings → Privacy &amp; Security → Tracking → toggle off WordHaven</li>
-      <li><strong>System-wide:</strong> Settings → Privacy &amp; Security → Apple Advertising → toggle off "Personalised Ads"</li>
-      <li>You will still see ads after opting out, but they will be non-personalised (contextual only)</li>
+      <li><strong>Per-app opt-out:</strong> iOS Settings &gt; Privacy &amp; Security &gt; Tracking &gt; turn off WordHaven</li>
+      <li><strong>System-wide opt-out:</strong> iOS Settings &gt; Privacy &amp; Security &gt; Apple Advertising &gt; turn off Personalised Ads</li>
+      <li>If you opt out you will still see ads, but they will be non-personalised and based only on context</li>
     </ul>
 
     <!-- 5 -->
     <h2>5. App Tracking Transparency (ATT)</h2>
-    <p>In compliance with Apple's App Tracking Transparency framework (iOS 14.5+), WordHaven will ask for your permission before allowing AdMob to access your Apple Advertising Identifier (IDFA) for personalised ad targeting.</p>
+    <p>In compliance with Apple's App Tracking Transparency framework (required on iOS 14.5 and later), WordHaven will show you a permission prompt the first time you launch the app. This prompt asks whether AdMob may access your Apple Advertising Identifier (IDFA) to show personalised ads.</p>
     <ul>
-      <li>If you <strong>allow</strong> tracking: AdMob may use your IDFA to show you more relevant ads</li>
-      <li>If you <strong>decline</strong> tracking: AdMob will serve non-personalised (contextual) ads only — no IDFA is accessed</li>
-      <li>The app works identically either way — your choice has no effect on gameplay or features</li>
+      <li>If you <strong>allow</strong> tracking, AdMob may use your IDFA to show you ads that are more relevant to your interests</li>
+      <li>If you <strong>decline</strong> tracking, AdMob will show contextual ads only and your IDFA will not be accessed</li>
+      <li>Your choice has absolutely no effect on gameplay, features, or your ability to earn coins by watching ads</li>
     </ul>
-    <p>You can change your choice at any time in iOS Settings → Privacy &amp; Security → Tracking.</p>
+    <p>You can change this decision at any time in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
 
     <!-- 6 -->
-    <h2>6. Permissions We Request</h2>
+    <h2>6. Permissions the App Requests</h2>
     <table class="data-table">
       <thead>
         <tr>
@@ -347,8 +346,8 @@
       <tbody>
         <tr>
           <td>App Tracking Transparency (ATT)</td>
-          <td><span class="badge badge-yellow">Yes</span></td>
-          <td>Required for AdMob personalised ads (optional to grant)</td>
+          <td><span class="badge badge-yellow">Yes — optional</span></td>
+          <td>Required by Apple before AdMob can use your IDFA for personalised ads. Granting this is entirely your choice.</td>
         </tr>
         <tr>
           <td>Camera</td>
@@ -371,7 +370,7 @@
           <td>Not used</td>
         </tr>
         <tr>
-          <td>Photos / Media Library</td>
+          <td>Photos and Media Library</td>
           <td><span class="badge badge-green">Never</span></td>
           <td>Not used</td>
         </tr>
@@ -386,7 +385,7 @@
           <td>Not used</td>
         </tr>
         <tr>
-          <td>Health / HealthKit</td>
+          <td>Health and HealthKit</td>
           <td><span class="badge badge-green">Never</span></td>
           <td>Not used</td>
         </tr>
@@ -400,53 +399,53 @@
 
     <!-- 7 -->
     <h2>7. Network Communication</h2>
-    <p>WordHaven <strong>does not connect to any server operated by us.</strong> There is no WordHaven backend, cloud save, or account system. All game data is stored locally on your device.</p>
-    <p>The only outbound network communication the app makes is:</p>
+    <p>WordHaven <strong>does not connect to any server we operate.</strong> There is no WordHaven backend, no cloud save, and no account system of any kind. All game data lives on your device.</p>
+    <p>The only outbound network activity the app generates is:</p>
     <ul>
-      <li><strong>Google AdMob</strong> — to fetch and display rewarded ads (when you choose to watch one)</li>
-      <li><strong>Apple's ATT framework</strong> — to prompt for tracking consent on first launch</li>
+      <li>Connecting to <strong>Google AdMob's servers</strong> to fetch and play a rewarded ad (only when you choose to watch one)</li>
+      <li>Communicating with <strong>Apple's ATT framework</strong> to handle the tracking permission prompt on first launch</li>
     </ul>
-    <p>All game content (levels, puzzles, word lists, backgrounds, music) is bundled within the app and loaded locally — no internet connection is required to play.</p>
+    <p>All game content including levels, daily puzzles, word lists, background images, and music is bundled inside the app itself. No internet connection is required to play.</p>
 
     <!-- 8 -->
-    <h2>8. Audio</h2>
-    <p>WordHaven plays background music and sound effects to enhance the puzzle experience. All audio is:</p>
+    <h2>8. Sound and Music</h2>
+    <p>WordHaven includes background music and sound effects to enhance the experience. All audio in the app is:</p>
     <ul>
-      <li>Fully optional — you can disable music and sound effects independently in Settings</li>
-      <li>Generated locally on your device (Web Audio API) or loaded from bundled files</li>
-      <li>Never recorded, captured, or transmitted</li>
+      <li>Completely optional — music and sound effects can be turned off independently in Settings</li>
+      <li>Either loaded from files bundled within the app or generated locally on your device using the Web Audio API</li>
+      <li>Never recorded, captured, analysed, or transmitted anywhere</li>
     </ul>
-    <p>The app does not use your microphone or access any audio input.</p>
+    <p>The app does not access your microphone and has no capability to capture audio input of any kind.</p>
 
     <!-- 9 -->
     <h2>9. In-App Purchases</h2>
-    <p>WordHaven does not currently offer any in-app purchases. There are no premium upgrades, coin packs, or subscriptions. The only way to earn coins in the app is through gameplay or by watching optional rewarded ads via AdMob.</p>
-    <p>If in-app purchases are introduced in a future version, this policy will be updated accordingly and you will be notified via an app update.</p>
+    <p>WordHaven does not currently offer any in-app purchases. There are no paid upgrades, coin packs, or subscriptions. Your only way to earn coins is through normal gameplay (completing levels and finding words) or by choosing to watch an optional rewarded ad.</p>
+    <p>If in-app purchases are introduced in a future update, this policy will be updated and you will be informed through the app update release notes.</p>
 
     <!-- 10 -->
-    <h2>10. Third-Party SDKs and Libraries</h2>
-    <p>WordHaven uses the following categories of third-party software:</p>
+    <h2>10. Third-Party Software Used in the App</h2>
+    <p>The following categories of third-party code are included in WordHaven:</p>
     <table class="data-table">
       <thead>
         <tr>
           <th>Category</th>
-          <th>Library / SDK</th>
-          <th>Privacy Impact</th>
+          <th>What we use</th>
+          <th>Privacy impact</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Advertising</td>
-          <td>Google AdMob (via Capacitor Community)</td>
+          <td>Google AdMob (via Capacitor Community plugin)</td>
           <td><span class="badge badge-yellow">See Section 4</span></td>
         </tr>
         <tr>
-          <td>App Framework</td>
-          <td>Apache Capacitor (Ionic)</td>
+          <td>App framework</td>
+          <td>Apache Capacitor</td>
           <td><span class="badge badge-green">No data collection</span></td>
         </tr>
         <tr>
-          <td>UI Components</td>
+          <td>UI components</td>
           <td>React, Radix UI, Tailwind CSS</td>
           <td><span class="badge badge-green">No data collection</span></td>
         </tr>
@@ -461,17 +460,17 @@
           <td><span class="badge badge-green">Not used</span></td>
         </tr>
         <tr>
-          <td>Crash Reporting</td>
+          <td>Crash reporting</td>
           <td>None</td>
           <td><span class="badge badge-green">Not used</span></td>
         </tr>
         <tr>
-          <td>Social Login</td>
+          <td>Social login</td>
           <td>None</td>
           <td><span class="badge badge-green">Not used</span></td>
         </tr>
         <tr>
-          <td>Payment Processing</td>
+          <td>Payment processing</td>
           <td>None</td>
           <td><span class="badge badge-green">Not used</span></td>
         </tr>
@@ -480,71 +479,87 @@
 
     <!-- 11 -->
     <h2>11. Children's Privacy (COPPA)</h2>
-    <p>WordHaven is a word puzzle game suitable for general audiences. The app is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
-    <p>If you are a parent or guardian and believe your child under 13 has provided personal information through this app, please contact us at <a href="mailto:wordhaven.app@gmail.com">wordhaven.app@gmail.com</a> and we will take appropriate steps.</p>
-    <p>Note that AdMob's data collection described in Section 4 is governed by Google's own COPPA compliance policies. Google does not use personalised advertising for users known to be under 13.</p>
+    <p>WordHaven is a word puzzle game intended for general audiences. The app is not directed at children under the age of 13, and we do not knowingly collect personal information from anyone under 13.</p>
+    <p>If you are a parent or guardian and believe your child has provided any personal information through this app, please reach out to us at <a href="mailto:wordhaven.app@gmail.com">wordhaven.app@gmail.com</a> and we will address it promptly.</p>
+    <p>AdMob's own data practices for users under 13 are governed by Google's COPPA compliance policies. Google does not use personalised advertising for users it knows to be under 13.</p>
 
     <!-- 12 -->
-    <h2>12. Your Rights — GDPR (European Users)</h2>
-    <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have certain rights under the General Data Protection Regulation (GDPR) and equivalent laws:</p>
+    <h2>12. Rights for Canadian Users (PIPEDA)</h2>
+    <p>As a developer based in Ontario, Canada, we are subject to Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA). PIPEDA establishes ten fair information principles that govern how personal information is collected, used, and disclosed.</p>
+    <p>Because WordHaven collects no personal information from users, these principles are satisfied by design. Specifically:</p>
     <ul>
-      <li><strong>Right of access</strong> — the right to know what data is held about you</li>
-      <li><strong>Right to rectification</strong> — the right to correct inaccurate data</li>
-      <li><strong>Right to erasure ("right to be forgotten")</strong> — the right to request deletion of your data</li>
-      <li><strong>Right to restriction of processing</strong> — the right to limit how your data is used</li>
-      <li><strong>Right to data portability</strong> — the right to receive your data in a portable format</li>
-      <li><strong>Right to object</strong> — the right to object to processing based on legitimate interests</li>
+      <li><strong>Accountability:</strong> We are responsible for the personal information under our control. Since we collect none, our exposure is zero.</li>
+      <li><strong>Identifying purposes:</strong> Any purpose for which information is collected will be documented here before collection begins.</li>
+      <li><strong>Consent:</strong> The only data-related consent we seek is your optional permission for AdMob's tracking via the ATT prompt.</li>
+      <li><strong>Limiting collection:</strong> We collect only what is necessary. At present, that is nothing from our side.</li>
+      <li><strong>Safeguards:</strong> All game data remains on your device and is protected by iOS's built-in security features.</li>
+      <li><strong>Openness:</strong> This policy publicly describes our practices in full.</li>
+      <li><strong>Individual access:</strong> Since we hold no personal data about you, there is nothing to request access to from us.</li>
     </ul>
-    <p>Because WordHaven collects no personal data itself, most of these rights are satisfied by default. For any data collected by AdMob on Google's behalf, you can exercise your rights directly with Google at <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">myaccount.google.com/data-and-privacy</a>.</p>
-    <p>For any questions or requests, contact us at <a href="mailto:wordhaven.app@gmail.com">wordhaven.app@gmail.com</a>.</p>
+    <p>If you have a question or complaint about our privacy practices under PIPEDA, you may contact us at <a href="mailto:wordhaven.app@gmail.com">wordhaven.app@gmail.com</a>. You also have the right to escalate a complaint to the <a href="https://www.priv.gc.ca" target="_blank" rel="noopener">Office of the Privacy Commissioner of Canada</a>.</p>
 
     <!-- 13 -->
-    <h2>13. Your Rights — CCPA (California Users)</h2>
-    <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA):</p>
+    <h2>13. Rights for European Users (GDPR)</h2>
+    <p>If you are located in the European Economic Area, the United Kingdom, or Switzerland, you have rights under the General Data Protection Regulation (GDPR) and equivalent local laws, including:</p>
     <ul>
-      <li><strong>Right to know</strong> — the right to request disclosure of personal information collected about you</li>
-      <li><strong>Right to deletion</strong> — the right to request deletion of your personal information</li>
-      <li><strong>Right to opt-out</strong> — the right to opt out of the "sale" of your personal information</li>
-      <li><strong>Right to non-discrimination</strong> — the right not to be discriminated against for exercising your privacy rights</li>
+      <li><strong>Right of access</strong> — to know what personal data is held about you</li>
+      <li><strong>Right to rectification</strong> — to correct inaccurate data</li>
+      <li><strong>Right to erasure</strong> — to request deletion of your data</li>
+      <li><strong>Right to restriction of processing</strong> — to limit how your data is used</li>
+      <li><strong>Right to data portability</strong> — to receive your data in a portable format</li>
+      <li><strong>Right to object</strong> — to object to certain types of processing</li>
     </ul>
-    <p><strong>WordHaven does not sell personal information.</strong> We do not share personal data with third parties for monetary or other valuable consideration. AdMob's use of your IDFA (with consent) may constitute "sharing" under the CCPA — you may opt out as described in Section 4.</p>
+    <p>Because WordHaven holds no personal data about you, most of these rights are satisfied by default on our end. For any data collected by AdMob, you can exercise your rights directly with Google at <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">myaccount.google.com/data-and-privacy</a>.</p>
+    <p>To reach us with any privacy request, email <a href="mailto:wordhaven.app@gmail.com">wordhaven.app@gmail.com</a>.</p>
 
     <!-- 14 -->
-    <h2>14. Data Security</h2>
-    <p>Because all game data is stored locally on your device and we operate no servers, there is no risk of a server-side data breach affecting your information through WordHaven.</p>
-    <p>Your device's built-in security (iOS encryption, Secure Enclave, passcode/Face ID protection) protects all locally stored app data. We recommend keeping your device's operating system and WordHaven up to date.</p>
+    <h2>14. Rights for California Users (CCPA)</h2>
+    <p>If you are a California resident, the California Consumer Privacy Act (CCPA) gives you the following rights:</p>
+    <ul>
+      <li><strong>Right to know</strong> what personal information has been collected about you and how it is used</li>
+      <li><strong>Right to deletion</strong> of your personal information</li>
+      <li><strong>Right to opt out</strong> of the sale of your personal information</li>
+      <li><strong>Right to non-discrimination</strong> for exercising any of the above rights</li>
+    </ul>
+    <p><strong>WordHaven does not sell personal information.</strong> We do not share personal data with third parties for money or any other valuable consideration. AdMob's use of your IDFA (if you consent via ATT) may be considered data sharing under the CCPA. You can opt out of that at any time using the steps in Section 4.</p>
 
     <!-- 15 -->
-    <h2>15. Data Retention</h2>
-    <p>WordHaven retains no data because we collect none. Local data on your device persists until you delete the app or clear its storage manually (see Section 3).</p>
-    <p>AdMob's data retention is governed by Google's own retention policies, available at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+    <h2>15. Data Security</h2>
+    <p>Because WordHaven stores all game data locally on your device and we operate no servers, a server-side breach affecting your information through WordHaven is simply not possible.</p>
+    <p>Your locally stored data is protected by iOS's built-in encryption, Secure Enclave, and any passcode or biometric lock you have set on your device. We recommend keeping both iOS and the WordHaven app updated to the latest version.</p>
 
     <!-- 16 -->
-    <h2>16. International Users</h2>
-    <p>WordHaven is available globally on the Apple App Store. Because we collect no personal data ourselves, there are no cross-border data transfers by us. Google AdMob may transfer data internationally in accordance with Google's data transfer mechanisms (Standard Contractual Clauses, etc.) as described in Google's privacy policy.</p>
+    <h2>16. Data Retention</h2>
+    <p>WordHaven retains no data on its end because we collect none. The data stored locally on your device persists until you delete the app or clear its storage manually (see Section 3 for how to do this).</p>
+    <p>Any data collected by AdMob is retained according to Google's own policies, which you can review at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
 
     <!-- 17 -->
-    <h2>17. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy if the app's features change (for example, if we add in-app purchases, accounts, or new third-party services). When we do:</p>
-    <ul>
-      <li>The updated policy will be posted at this URL with a new effective date</li>
-      <li>For material changes, we will notify you via an app update or an in-app notice</li>
-      <li>Continued use of the app after changes are posted constitutes your acceptance of the updated policy</li>
-    </ul>
-    <p>We encourage you to review this policy periodically. The current version will always be available at this URL.</p>
+    <h2>17. International Availability</h2>
+    <p>WordHaven is available worldwide on the Apple App Store. Because we collect no personal data ourselves, we make no cross-border data transfers. Google AdMob may transfer limited device data internationally as part of its ad delivery infrastructure, in accordance with Google's own data transfer mechanisms and policies.</p>
 
     <!-- 18 -->
-    <h2>18. Contact Us</h2>
-    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
+    <h2>18. Changes to This Policy</h2>
+    <p>We may update this policy if the app gains new features that affect privacy (for example, if we introduce in-app purchases, accounts, or additional third-party services). When that happens:</p>
+    <ul>
+      <li>The updated policy will be posted here with a new effective date</li>
+      <li>For significant changes, we will include a notice in the app update release notes</li>
+      <li>Continuing to use the app after a policy update means you accept the revised terms</li>
+    </ul>
+    <p>We encourage you to check back periodically. The version and effective date are shown at the top of this page.</p>
+
+    <!-- 19 -->
+    <h2>19. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests about this Privacy Policy or your privacy in general, please get in touch:</p>
     <ul>
       <li><strong>Email:</strong> <a href="mailto:wordhaven.app@gmail.com">wordhaven.app@gmail.com</a></li>
+      <li><strong>Developer location:</strong> Ontario, Canada</li>
     </ul>
-    <p>We will respond to all reasonable requests within 30 days.</p>
+    <p>We will do our best to respond to all reasonable requests within 30 days.</p>
 
     <div class="footer">
-      <p>WordHaven · Independent iOS Developer</p>
+      <p>WordHaven · Independent iOS Developer · Ontario, Canada</p>
       <p>Privacy Policy · Effective February 23, 2026 · Version 1.0</p>
-      <p>This policy applies to the WordHaven iOS application distributed via the Apple App Store.</p>
+      <p>This policy applies solely to the WordHaven iOS application distributed via the Apple App Store.</p>
     </div>
 
   </div>
