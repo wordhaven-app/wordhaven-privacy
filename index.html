@@ -42,83 +42,93 @@
   <p class="meta">WordHaven &nbsp;·&nbsp; Effective date: March 2026 &nbsp;·&nbsp; Version 1.0</p>
 
   <div class="highlight-box">
-    <strong>Short version:</strong> WordHaven does not collect, store, or share any personal information. All your game data stays on your device. We have no servers that receive your data, no analytics, no advertising, and no tracking of any kind.
+    <strong>Plain English summary:</strong> WordHaven collects absolutely no personal information. Everything — your progress, coins, settings — is saved only on your own device and never transmitted anywhere. We have no servers, no analytics, no advertising, and no tracking of any kind.
   </div>
 
-  <h2>1. Overview</h2>
-  <p>WordHaven ("we", "us", or "our") is a word puzzle game developed for iOS. We take your privacy seriously. This Privacy Policy describes what information (if any) is collected when you use WordHaven, how it is used, and your rights with respect to that information.</p>
-  <p>By using WordHaven, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.</p>
+  <h2>1. About This Policy</h2>
+  <p>WordHaven ("we", "us", or "our") is a word puzzle game for iOS developed by an independent developer. This Privacy Policy explains what information is (and is not) collected when you use the app, how data is stored, and your rights.</p>
+  <p>We have written this policy to meet the requirements of the Apple App Store, the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other applicable privacy laws. By downloading or using WordHaven, you acknowledge this policy.</p>
 
-  <h2>2. Information We Do Not Collect</h2>
-  <p>WordHaven does <strong>not</strong> collect any of the following:</p>
+  <h2>2. Information We Collect</h2>
+  <p>WordHaven collects <strong>no personal information whatsoever</strong>. We do not collect, process, transmit, or store:</p>
   <ul>
-    <li>Your name, email address, phone number, or any other contact information</li>
-    <li>Your location or IP address</li>
-    <li>Device identifiers or advertising identifiers</li>
-    <li>Browsing history, usage patterns, or behavioural data</li>
-    <li>Financial or payment information</li>
-    <li>Any biometric data</li>
-    <li>Crash reports or diagnostics sent to us</li>
+    <li>Your name, email address, username, or any other identifier</li>
+    <li>Your device's advertising identifier (IDFA) or any other device ID</li>
+    <li>Your IP address or precise or approximate location</li>
+    <li>Demographic information such as age, gender, or language</li>
+    <li>Contact information, photos, or files from your device</li>
+    <li>Financial or payment information of any kind</li>
+    <li>Health, fitness, or biometric data</li>
+    <li>Usage analytics or behavioural data sent to any server</li>
+    <li>Crash reports or diagnostic data sent to us</li>
+    <li>Any data from your microphone, camera, contacts, or calendar</li>
   </ul>
-  <p>We have no backend servers that receive data from the app. There are no accounts, no sign-ins, and no user profiles.</p>
+  <p>We have no backend servers that receive data from the app. There is no registration, no sign-in, and no user account of any kind.</p>
 
-  <h2>3. Information Stored Locally on Your Device</h2>
-  <p>WordHaven saves the following data <strong>only on your device</strong>, using the device's local storage (WebView localStorage). This data never leaves your device and is never accessible to us or any third party:</p>
+  <h2>3. Data Stored Locally on Your Device</h2>
+  <p>To provide a functioning game experience, WordHaven stores the following data <strong>locally on your device only</strong>, using the device's WebView local storage (equivalent to a private on-device database). This data never leaves your device and is never accessible to us or any third party:</p>
   <ul>
-    <li><strong>Game progress</strong> — your current level, completed levels, and discovered words</li>
-    <li><strong>Coin balance</strong> — your in-game currency balance</li>
-    <li><strong>Settings preferences</strong> — such as sound and music on/off</li>
-    <li><strong>Tutorial completion status</strong> — whether you have completed the introductory tutorial</li>
-    <li><strong>Daily puzzle history</strong> — which daily puzzles you have completed</li>
+    <li><strong>Game progress</strong> — your current campaign level, completed levels, and discovered words</li>
+    <li><strong>Daily puzzle history</strong> — which daily puzzles you have completed and when</li>
+    <li><strong>Coin balance</strong> — your in-game currency balance earned through gameplay</li>
+    <li><strong>App settings</strong> — your sound and music preferences (on/off)</li>
+    <li><strong>Tutorial status</strong> — whether you have completed the introductory tutorial</li>
   </ul>
-  <p>This locally stored data is automatically deleted if you uninstall the app. We cannot recover it for you.</p>
+  <p>This data is stored using standard browser/WebView localStorage APIs. It is sandboxed to the app and cannot be read by other apps on your device. If you delete the app, all of this data is permanently erased. We have no ability to recover it for you.</p>
 
-  <h2>4. No Third-Party SDKs or Services</h2>
-  <p>WordHaven does not integrate any third-party SDKs, services, or frameworks that collect data. Specifically, we do not use:</p>
+  <h2>4. Network Activity</h2>
+  <p>WordHaven does not make any outbound network requests to external servers. The app's word lists, level data, puzzle content, and all other assets are bundled inside the app itself and loaded from the device's local storage. No data is transmitted over the internet during gameplay.</p>
+  <p>The only network activity associated with WordHaven is standard App Store functionality handled entirely by Apple (e.g. downloading the app, automatic updates), which is governed by Apple's own privacy policy.</p>
+
+  <h2>5. No Third-Party SDKs, Analytics, or Advertising</h2>
+  <p>WordHaven v1.0 contains <strong>no third-party SDKs</strong> of any kind beyond the core Capacitor framework used to run the app on iOS. Specifically, we do not use:</p>
   <ul>
-    <li>Advertising networks of any kind</li>
-    <li>Analytics platforms (e.g. Firebase, Mixpanel, Amplitude)</li>
-    <li>Crash reporting services (e.g. Crashlytics, Sentry)</li>
-    <li>Social login or social sharing SDKs</li>
-    <li>Any payment or in-app purchase services beyond Apple's own StoreKit (not currently used in v1.0)</li>
+    <li>Advertising networks or ad SDKs of any kind</li>
+    <li>Analytics or behavioural tracking platforms (e.g. Firebase Analytics, Mixpanel, Amplitude, Segment)</li>
+    <li>Crash reporting or monitoring services (e.g. Crashlytics, Sentry, Bugsnag)</li>
+    <li>Social login SDKs (e.g. Facebook, Google, Apple Sign-In)</li>
+    <li>Cloud storage or sync services</li>
+    <li>Any payment or in-app purchase SDK (no purchases are offered in v1.0)</li>
   </ul>
+  <p>The Capacitor framework is an open-source runtime that enables the app to run on iOS. It does not collect personal data. Its own privacy manifest (required by Apple) is included in the app bundle and declares no data collection.</p>
 
-  <h2>5. No Advertising or Tracking</h2>
-  <p>WordHaven v1.0 contains no advertisements. We do not display ads, we do not use advertising identifiers (such as Apple's IDFA), and we do not participate in any ad network. We do not track you across apps or websites owned by other companies.</p>
+  <h2>6. No Advertising or Tracking</h2>
+  <p>WordHaven v1.0 contains no advertisements of any kind. We do not use Apple's Advertising Identifier (IDFA), and the app does not request App Tracking Transparency (ATT) permission. We do not track you across apps or websites, and we do not participate in any advertising network or data broker relationship.</p>
 
-  <h2>6. Apple Platform Privacy</h2>
-  <p>WordHaven is distributed through the Apple App Store. Apple may collect certain information as part of the standard App Store and iOS operating system functions, such as crash logs or usage metrics, subject to Apple's own Privacy Policy. We do not receive, access, or control this data. Please review <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for more information.</p>
+  <h2>7. Apple Platform</h2>
+  <p>WordHaven is distributed exclusively through the Apple App Store. Apple may independently collect certain information as part of standard iOS and App Store operations — such as download records, crash logs submitted through iOS Settings, or aggregate usage data — subject to <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>. We do not receive, access, or control any such data.</p>
+  <p>When you use Background App Refresh, iOS audio session management, or other iOS system features, these are handled entirely by iOS and Apple. WordHaven does not receive any personal data from these interactions.</p>
 
-  <h2>7. Children's Privacy</h2>
-  <p>WordHaven does not knowingly collect personal information from anyone, including children under the age of 13 (or the applicable age of digital consent in your jurisdiction). Because the app collects no personal data from any user, it is appropriate for all ages.</p>
-  <p>If you are a parent or guardian and believe your child has somehow provided personal information through the app, please contact us at the address below and we will promptly address your concern.</p>
+  <h2>8. Children's Privacy</h2>
+  <p>WordHaven does not knowingly collect personal information from anyone, including children under the age of 13 (or the relevant age of digital consent in your jurisdiction, such as 16 under GDPR). Because the app collects no personal data from any user of any age, it is appropriate for all ages and families.</p>
+  <p>If you are a parent or guardian and have concerns about your child's use of the app, please contact us. Since we hold no data about any user, there is nothing we would need to delete, but we are happy to address your concerns directly.</p>
 
-  <h2>8. Data Security</h2>
-  <p>Since WordHaven does not transmit or store any personal data on external servers, the risk of a data breach involving your personal information is effectively eliminated at the application level. Your game data is stored only on your own device and is protected by your device's built-in security (passcode, Face ID, Touch ID).</p>
+  <h2>9. Data Security</h2>
+  <p>Because WordHaven does not transmit or store personal data on any external server, the risk of a data breach involving your personal information is eliminated at the application level. Your locally stored game data is protected by your device's own security features, including your device passcode, Face ID, or Touch ID, and by Apple's app sandboxing.</p>
 
-  <h2>9. Data Retention and Deletion</h2>
-  <p>All locally stored game data persists on your device until you delete the app. To remove all data associated with WordHaven, simply uninstall the app from your device. Because we hold no data on our servers, there is nothing further for us to delete on your behalf.</p>
+  <h2>10. Data Retention and Deletion</h2>
+  <p>All game data is stored solely on your device for as long as you have the app installed. To permanently delete all data associated with WordHaven, simply uninstall the app from your device. Because we hold no data on our servers, there is nothing we need to delete on our end — uninstalling the app removes everything completely.</p>
 
-  <h2>10. Your Rights</h2>
-  <p>Depending on where you live, you may have rights under applicable privacy laws (such as GDPR in the European Union or CCPA in California). These rights typically include:</p>
+  <h2>11. Your Privacy Rights</h2>
+  <p>Depending on where you reside, you may have rights under applicable privacy laws, including:</p>
   <ul>
-    <li>The right to know what personal data is collected about you</li>
-    <li>The right to access, correct, or delete your personal data</li>
-    <li>The right to opt out of the sale of your personal data</li>
+    <li><strong>GDPR (EU/EEA/UK):</strong> right to access, rectify, erase, restrict, or port your personal data; right to object to processing; right to withdraw consent</li>
+    <li><strong>CCPA (California):</strong> right to know what personal data is collected, right to delete, right to opt out of sale, right to non-discrimination</li>
+    <li><strong>Other jurisdictions:</strong> similar rights under local law</li>
   </ul>
-  <p>Because WordHaven collects no personal data, there is nothing to access, correct, delete, or opt out of. If you have questions, you are welcome to contact us and we will respond promptly.</p>
+  <p>Because WordHaven collects no personal data, there is nothing to access, rectify, erase, port, or opt out of. All of these rights are already satisfied by the nature of the app. If you have any questions or want written confirmation, please contact us and we will respond promptly.</p>
 
-  <h2>11. International Users</h2>
-  <p>WordHaven is available globally. Since no personal data is collected or transmitted, there are no cross-border data transfers to be concerned about. All game data remains on the device you use, in the country where you use it.</p>
+  <h2>12. International Users</h2>
+  <p>WordHaven is available globally through the Apple App Store. Since no personal data is collected or transmitted, there are no cross-border data transfers to disclose. Your game data stays on the device you use, in the country where you use it, under your sole control.</p>
 
-  <h2>12. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time, for example if we introduce new features in a future version of the app. When we do, we will update the effective date at the top of this page. We encourage you to review this policy periodically.</p>
-  <p>If a future version of the app introduces any form of data collection, we will update this policy to reflect that clearly before the update is released, and we will seek any required consents at that time.</p>
+  <h2>13. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy if future versions of the app introduce new features. Any material change that involves the collection of personal data will be clearly disclosed before that version is released, and any legally required consents will be sought at that time. The effective date at the top of this page will always reflect the most recent revision.</p>
+  <p>We encourage you to review this page periodically. Continued use of the app after any changes constitutes acceptance of the updated policy.</p>
 
-  <h2>13. Contact Us</h2>
-  <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the privacy practices of WordHaven, please contact us at:</p>
+  <h2>14. Contact Us</h2>
+  <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the privacy practices of WordHaven, please reach out:</p>
   <p><strong>Email:</strong> <a href="mailto:wordhavencontact@gmail.com">wordhavencontact@gmail.com</a></p>
-  <p>We aim to respond to all inquiries within 5 business days.</p>
+  <p>We aim to respond to all privacy inquiries within <strong>2 business days</strong>.</p>
 
   <hr />
   <p class="footer">WordHaven &copy; 2026. All rights reserved.</p>
