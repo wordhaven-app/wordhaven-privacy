@@ -11,54 +11,117 @@
       background: #f9f9f9;
       color: #1a1a1a;
       padding: 32px 20px 64px;
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 auto;
-      line-height: 1.7;
+      line-height: 1.75;
     }
-    h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
     .meta { font-size: 13px; color: #888; margin-bottom: 36px; }
-    h2 { font-size: 17px; font-weight: 600; margin: 28px 0 10px; }
-    p, li { font-size: 15px; color: #333; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    a { color: #2563eb; }
-    hr { border: none; border-top: 1px solid #e5e5e5; margin: 36px 0; }
+    h2 { font-size: 18px; font-weight: 600; margin: 36px 0 10px; color: #111; }
+    p { font-size: 15px; color: #333; margin-bottom: 12px; }
+    ul, ol { padding-left: 22px; margin-bottom: 12px; }
+    li { font-size: 15px; color: #333; margin-bottom: 6px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight-box {
+      background: #f0f7ff;
+      border-left: 4px solid #2563eb;
+      border-radius: 4px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: #1e3a5f;
+    }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 40px 0; }
+    .footer { font-size: 13px; color: #aaa; text-align: center; }
   </style>
 </head>
 <body>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">WordHaven &nbsp;·&nbsp; Effective date: March 2026</p>
+  <p class="meta">WordHaven &nbsp;·&nbsp; Effective date: March 2026 &nbsp;·&nbsp; Version 1.0</p>
 
-  <p>WordHaven is a word puzzle game. We are committed to protecting your privacy. This policy explains what information is collected when you use our app and how it is used.</p>
+  <div class="highlight-box">
+    <strong>Short version:</strong> WordHaven does not collect, store, or share any personal information. All your game data stays on your device. We have no servers that receive your data, no analytics, no advertising, and no tracking of any kind.
+  </div>
 
-  <h2>1. Information We Collect</h2>
-  <p>WordHaven does <strong>not</strong> collect, transmit, or share any personal information. All game data is stored locally on your device only.</p>
+  <h2>1. Overview</h2>
+  <p>WordHaven ("we", "us", or "our") is a word puzzle game developed for iOS. We take your privacy seriously. This Privacy Policy describes what information (if any) is collected when you use WordHaven, how it is used, and your rights with respect to that information.</p>
+  <p>By using WordHaven, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.</p>
+
+  <h2>2. Information We Do Not Collect</h2>
+  <p>WordHaven does <strong>not</strong> collect any of the following:</p>
   <ul>
-    <li><strong>Game progress</strong> — your current level, discovered words, coin balance, and settings are saved in your device's local storage. This data never leaves your device.</li>
-    <li><strong>No account required</strong> — we do not ask you to create an account or sign in.</li>
-    <li><strong>No analytics</strong> — we do not use third-party analytics services.</li>
-    <li><strong>No advertising</strong> — WordHaven contains no advertisements.</li>
-    <li><strong>No tracking</strong> — we do not track you across apps or websites.</li>
+    <li>Your name, email address, phone number, or any other contact information</li>
+    <li>Your location or IP address</li>
+    <li>Device identifiers or advertising identifiers</li>
+    <li>Browsing history, usage patterns, or behavioural data</li>
+    <li>Financial or payment information</li>
+    <li>Any biometric data</li>
+    <li>Crash reports or diagnostics sent to us</li>
+  </ul>
+  <p>We have no backend servers that receive data from the app. There are no accounts, no sign-ins, and no user profiles.</p>
+
+  <h2>3. Information Stored Locally on Your Device</h2>
+  <p>WordHaven saves the following data <strong>only on your device</strong>, using the device's local storage (WebView localStorage). This data never leaves your device and is never accessible to us or any third party:</p>
+  <ul>
+    <li><strong>Game progress</strong> — your current level, completed levels, and discovered words</li>
+    <li><strong>Coin balance</strong> — your in-game currency balance</li>
+    <li><strong>Settings preferences</strong> — such as sound and music on/off</li>
+    <li><strong>Tutorial completion status</strong> — whether you have completed the introductory tutorial</li>
+    <li><strong>Daily puzzle history</strong> — which daily puzzles you have completed</li>
+  </ul>
+  <p>This locally stored data is automatically deleted if you uninstall the app. We cannot recover it for you.</p>
+
+  <h2>4. No Third-Party SDKs or Services</h2>
+  <p>WordHaven does not integrate any third-party SDKs, services, or frameworks that collect data. Specifically, we do not use:</p>
+  <ul>
+    <li>Advertising networks of any kind</li>
+    <li>Analytics platforms (e.g. Firebase, Mixpanel, Amplitude)</li>
+    <li>Crash reporting services (e.g. Crashlytics, Sentry)</li>
+    <li>Social login or social sharing SDKs</li>
+    <li>Any payment or in-app purchase services beyond Apple's own StoreKit (not currently used in v1.0)</li>
   </ul>
 
-  <h2>2. Data Storage</h2>
-  <p>Game data is stored locally on your device using standard browser/WebView storage (localStorage). This data is not backed up to any server and is not accessible to us. If you delete the app, this data is permanently removed.</p>
+  <h2>5. No Advertising or Tracking</h2>
+  <p>WordHaven v1.0 contains no advertisements. We do not display ads, we do not use advertising identifiers (such as Apple's IDFA), and we do not participate in any ad network. We do not track you across apps or websites owned by other companies.</p>
 
-  <h2>3. Children's Privacy</h2>
-  <p>WordHaven does not knowingly collect any information from children under the age of 13. Because we collect no personal information from any user, the app is safe for all ages.</p>
+  <h2>6. Apple Platform Privacy</h2>
+  <p>WordHaven is distributed through the Apple App Store. Apple may collect certain information as part of the standard App Store and iOS operating system functions, such as crash logs or usage metrics, subject to Apple's own Privacy Policy. We do not receive, access, or control this data. Please review <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for more information.</p>
 
-  <h2>4. Third-Party Services</h2>
-  <p>WordHaven does not integrate any third-party SDKs, advertising networks, or analytics platforms. No data is shared with any third party.</p>
+  <h2>7. Children's Privacy</h2>
+  <p>WordHaven does not knowingly collect personal information from anyone, including children under the age of 13 (or the applicable age of digital consent in your jurisdiction). Because the app collects no personal data from any user, it is appropriate for all ages.</p>
+  <p>If you are a parent or guardian and believe your child has somehow provided personal information through the app, please contact us at the address below and we will promptly address your concern.</p>
 
-  <h2>5. Changes to This Policy</h2>
-  <p>If we update this privacy policy in a future version of the app, we will update the effective date above. Continued use of the app after any changes constitutes acceptance of the updated policy.</p>
+  <h2>8. Data Security</h2>
+  <p>Since WordHaven does not transmit or store any personal data on external servers, the risk of a data breach involving your personal information is effectively eliminated at the application level. Your game data is stored only on your own device and is protected by your device's built-in security (passcode, Face ID, Touch ID).</p>
 
-  <h2>6. Contact</h2>
-  <p>If you have any questions about this privacy policy, please contact us at: <a href="mailto:support@wordhaven.app">support@wordhaven.app</a></p>
+  <h2>9. Data Retention and Deletion</h2>
+  <p>All locally stored game data persists on your device until you delete the app. To remove all data associated with WordHaven, simply uninstall the app from your device. Because we hold no data on our servers, there is nothing further for us to delete on your behalf.</p>
+
+  <h2>10. Your Rights</h2>
+  <p>Depending on where you live, you may have rights under applicable privacy laws (such as GDPR in the European Union or CCPA in California). These rights typically include:</p>
+  <ul>
+    <li>The right to know what personal data is collected about you</li>
+    <li>The right to access, correct, or delete your personal data</li>
+    <li>The right to opt out of the sale of your personal data</li>
+  </ul>
+  <p>Because WordHaven collects no personal data, there is nothing to access, correct, delete, or opt out of. If you have questions, you are welcome to contact us and we will respond promptly.</p>
+
+  <h2>11. International Users</h2>
+  <p>WordHaven is available globally. Since no personal data is collected or transmitted, there are no cross-border data transfers to be concerned about. All game data remains on the device you use, in the country where you use it.</p>
+
+  <h2>12. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time, for example if we introduce new features in a future version of the app. When we do, we will update the effective date at the top of this page. We encourage you to review this policy periodically.</p>
+  <p>If a future version of the app introduces any form of data collection, we will update this policy to reflect that clearly before the update is released, and we will seek any required consents at that time.</p>
+
+  <h2>13. Contact Us</h2>
+  <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the privacy practices of WordHaven, please contact us at:</p>
+  <p><strong>Email:</strong> <a href="mailto:wordhavencontact@gmail.com">wordhavencontact@gmail.com</a></p>
+  <p>We aim to respond to all inquiries within 5 business days.</p>
 
   <hr />
-  <p style="font-size:13px; color:#aaa; text-align:center;">WordHaven &copy; 2026. All rights reserved.</p>
+  <p class="footer">WordHaven &copy; 2026. All rights reserved.</p>
 
 </body>
 </html>
